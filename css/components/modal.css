@@ -1,0 +1,62 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(33, 29, 24, .58);
+  backdrop-filter: blur(5px);
+  padding: 24px;
+}
+.modal-backdrop.open { display: flex; }
+.login-modal {
+  position: relative;
+  width: min(100%, 400px);
+  background: var(--cream-2);
+  border-radius: 8px;
+  padding: 38px;
+  box-shadow: 0 28px 70px rgba(0,0,0,.28);
+}
+.login-modal .logo-mark { margin-bottom: 22px; }
+.modal-close {
+  position: absolute;
+  right: 30px;
+  top: 28px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  background: transparent;
+  font-size: 28px;
+  color: var(--muted);
+}
+.login-modal h2 { margin-bottom: 6px; font-size: 30px; }
+.login-modal p { color: var(--muted); margin-bottom: 20px; }
+.form-field { display: grid; gap: 7px; margin-bottom: 15px; }
+.form-field label { text-transform: uppercase; letter-spacing: .12em; font-size: 12px; color: var(--muted); font-weight: 900; }
+.form-field input {
+  border: 1px solid #cdbf9f;
+  border-radius: 5px;
+  background: var(--cream-2);
+  padding: 12px 14px;
+  outline: 0;
+}
+.form-field input:focus { border-color: var(--brand); }
+.create-account { text-align: center; margin: 20px 0 0 !important; }
+.create-account a { color: var(--brand); }
+.toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 80;
+  background: var(--dark);
+  color: white;
+  border-radius: 8px;
+  padding: 12px 16px;
+  box-shadow: var(--shadow);
+  transform: translateY(14px);
+  opacity: 0;
+  pointer-events: none;
+  transition: .2s ease;
+}
+.toast.show { opacity: 1; transform: translateY(0); }

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pages & Co. | All books</title>
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/layout.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/buttons.css" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/book-card.css" />
+  <link rel="stylesheet" href="css/components/modal.css" />
+  <link rel="stylesheet" href="css/pages/books.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="books">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main" class="container list-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Books</span>
+    </nav>
+
+    <header class="page-title-row">
+      <div>
+        <h1>All books</h1>
+        <p><span id="book-count">14</span> titles in the collection</p>
+      </div>
+    </header>
+
+    <section class="catalog-toolbar" aria-label="Book controls">
+      <div class="filter-pills" id="filter-pills"></div>
+      <label class="sort-control">
+        <span>Sort by</span>
+        <select id="sort-select" aria-label="Sort books">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to high</option>
+          <option value="price-high">Price: High to low</option>
+          <option value="rating">Rating</option>
+          <option value="newest">Newest</option>
+        </select>
+      </label>
+    </section>
+
+    <section aria-label="Book results">
+      <div class="book-grid catalog-grid" id="catalog-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No books match your search.</p>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="login-modal-root"></div>
+  <script defer src="js/data/books.js"></script>
+  <script defer src="js/utils/dom.js"></script>
+  <script defer src="js/components/toast.js"></script>
+  <script defer src="js/components/header.js"></script>
+  <script defer src="js/components/footer.js"></script>
+  <script defer src="js/components/login-modal.js"></script>
+  <script defer src="js/components/bag.js"></script>
+  <script defer src="js/components/book-card.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/pages/books.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.checkout-page { padding: 48px 0 165px; min-height: 620px; }
+.checkout-page h1 { margin-bottom: 4px; font-size: clamp(44px, 6vw, 58px); }
+.checkout-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 370px;
+  gap: 44px;
+  align-items: start;
+  margin-top: 26px;
+}
+.bag-card, .summary-card {
+  border: 1px solid var(--line);
+  background: var(--cream-2);
+  border-radius: 7px;
+}
+.bag-card {
+  min-height: 112px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 60px minmax(0, 1fr) auto auto;
+  gap: 16px;
+  align-items: center;
+}
+.bag-thumb { height: 80px; border-radius: 3px; }
+.bag-title { font-size: 17px; font-weight: 900; margin: 0; }
+.bag-author { margin: 1px 0 4px; color: var(--muted); }
+.remove-btn { padding: 0; border: 0; background: transparent; color: var(--brand); }
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 12px;
+  background: var(--cream);
+  font-weight: 900;
+}
+.qty-control button { border: 0; background: transparent; font-size: 18px; line-height: 1; color: var(--ink); }
+.line-total { color: var(--brand); font-weight: 900; font-size: 17px; }
+.summary-card { padding: 24px; }
+.summary-card h2 { font-size: 22px; margin-bottom: 14px; }
+.summary-line, .summary-total { display: flex; justify-content: space-between; gap: 14px; margin: 10px 0; }
+.summary-total { border-top: 1px solid var(--line); padding-top: 14px; margin-top: 14px; font-size: 20px; font-weight: 900; }
+.summary-total strong { color: var(--brand); }
+.summary-card p { margin: 14px 0 0; text-align: center; color: var(--muted); font-size: 13px; }
+.empty-bag { border: 1px dashed var(--line); border-radius: 8px; padding: 28px; background: rgba(255,250,240,.45); }

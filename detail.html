@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pages & Co. | Book detail</title>
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/layout.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/buttons.css" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/book-card.css" />
+  <link rel="stylesheet" href="css/components/modal.css" />
+  <link rel="stylesheet" href="css/pages/detail.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="detail">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main" class="container detail-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><a href="books.html">Books</a><span>/</span><span id="detail-crumb">The Lighthouse Keeper</span>
+    </nav>
+
+    <section class="detail-layout" id="detail-layout" aria-label="Book details"></section>
+
+    <section class="section related-section" aria-labelledby="related-title">
+      <h2 id="related-title">You may also like</h2>
+      <div class="book-grid related-grid" id="related-grid"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="login-modal-root"></div>
+  <script defer src="js/data/books.js"></script>
+  <script defer src="js/utils/dom.js"></script>
+  <script defer src="js/components/toast.js"></script>
+  <script defer src="js/components/header.js"></script>
+  <script defer src="js/components/footer.js"></script>
+  <script defer src="js/components/login-modal.js"></script>
+  <script defer src="js/components/bag.js"></script>
+  <script defer src="js/components/book-card.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/pages/detail.js"></script>
+</body>
+</html>

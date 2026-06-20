@@ -1,0 +1,61 @@
+@media (max-width: 1060px) {
+  .header-inner { gap: 12px; }
+  .nav { gap: 15px; }
+  .search-box input { width: 160px; }
+}
+@media (max-width: 880px) {
+  .header-inner { flex-wrap: wrap; padding: 10px 0; }
+  .mobile-toggle {
+    display: inline-grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    background: transparent;
+  }
+  .nav {
+    order: 5;
+    display: none;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .nav.open { display: grid; }
+  .nav a { padding: 8px 0; }
+  .header-actions { margin-left: auto; }
+  .search-box input { width: 190px; }
+  .hero-slider { padding: 54px 44px; }
+  .genre-grid { grid-template-columns: repeat(3, 1fr); }
+  .book-grid-five, .book-grid-four, .catalog-grid { grid-template-columns: repeat(3, 1fr); }
+  .detail-layout, .checkout-layout { grid-template-columns: 1fr; }
+  .detail-cover { max-width: 330px; }
+  .footer-main { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+}
+@media (max-width: 640px) {
+  .container, .wide-container, .header-inner, .footer-main, .footer-bottom { width: min(100% - 24px, 520px); }
+  .header-actions { width: 100%; order: 4; justify-content: space-between; }
+  .search-box { flex: 1; }
+  .search-box input { width: 100%; }
+  .hero-slider { margin-top: 16px; min-height: 380px; padding: 54px 34px; }
+  .slider-prev { left: 8px; }
+  .slider-next { right: 8px; }
+  .section-head { align-items: start; }
+  .genre-grid { grid-template-columns: repeat(2, 1fr); }
+  .book-grid-five, .book-grid-four, .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .catalog-toolbar { align-items: start; flex-direction: column; }
+  .sort-control { width: 100%; justify-content: space-between; }
+  .sort-control select { flex: 1; }
+  .promo { flex-direction: column; align-items: start; padding: 28px; }
+  .detail-actions { flex-direction: column; align-items: stretch; }
+  .spec-grid { grid-template-columns: repeat(2, 1fr); }
+  .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .bag-card { grid-template-columns: 56px minmax(0, 1fr); }
+  .qty-control, .line-total { justify-self: start; }
+  .footer-main { grid-template-columns: 1fr; }
+  .footer-bottom { flex-direction: column; }
+  .login-modal { padding: 30px 24px; }
+}
+@media (max-width: 390px) {
+  .book-grid-five, .book-grid-four, .catalog-grid, .genre-grid { grid-template-columns: 1fr; }
+}

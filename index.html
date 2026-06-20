@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pages & Co. | Home</title>
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/layout.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/buttons.css" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/book-card.css" />
+  <link rel="stylesheet" href="css/components/modal.css" />
+  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+</head>
+
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to content</a>
+  
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero-slider container" aria-label="Staff favourites">
+      <button class="slider-btn slider-prev" type="button" aria-label="Previous slide">‹</button>
+      <div class="hero-content">
+        <p class="eyebrow light">Staff favourites</p>
+        <h1 id="hero-title">The shelves<br />we keep<br />coming back to</h1>
+        <p id="hero-text">Our booksellers pick the titles they can’t stop pressing into customers’ hands.</p>
+        <a class="btn btn-gold" href="books.html">Browse bestsellers</a>
+      </div>
+      <button class="slider-btn slider-next" type="button" aria-label="Next slide">›</button>
+      <div class="slider-dots" aria-label="Slider pagination">
+        <button class="dot" type="button" aria-label="Slide 1"></button>
+        <button class="dot active" type="button" aria-label="Slide 2"></button>
+        <button class="dot" type="button" aria-label="Slide 3"></button>
+      </div>
+    </section>
+
+    <section class="section container genre-section" aria-labelledby="genre-title">
+      <p class="eyebrow">Find your shelf</p>
+      <h2 id="genre-title">Browse by genre</h2>
+      <div class="genre-grid" id="genre-grid"></div>
+    </section>
+
+    <section class="section container product-section" aria-labelledby="featured-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Editor’s picks</p>
+          <h2 id="featured-title">Featured this month</h2>
+        </div>
+        <a href="books.html">View all →</a>
+      </div>
+      <div class="book-grid book-grid-five" id="featured-grid"></div>
+    </section>
+
+    <section class="promo container" aria-label="Reading room promotion">
+      <div>
+        <p class="eyebrow light">The reading room</p>
+        <h2>Free shipping on<br />every order over $35</h2>
+        <p>Plus 15% off your first month and a weekly recommendation picked just for you.</p>
+      </div>
+      <button class="btn btn-gold" type="button" data-newsletter-trigger>Join free</button>
+    </section>
+
+    <section class="section container product-section" aria-labelledby="bestseller-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Most loved</p>
+          <h2 id="bestseller-title">Bestsellers</h2>
+        </div>
+        <a href="books.html?filter=bestseller">View all →</a>
+      </div>
+      <div class="book-grid book-grid-four" id="bestseller-grid"></div>
+    </section>
+
+    <section class="section container product-section" aria-labelledby="new-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Hot off the press</p>
+          <h2 id="new-title">New arrivals</h2>
+        </div>
+        <a href="books.html?filter=new">View all →</a>
+      </div>
+      <div class="book-grid book-grid-four" id="new-grid"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="login-modal-root"></div>
+  <script defer src="js/data/books.js"></script>
+  <script defer src="js/utils/dom.js"></script>
+  <script defer src="js/components/toast.js"></script>
+  <script defer src="js/components/header.js"></script>
+  <script defer src="js/components/footer.js"></script>
+  <script defer src="js/components/login-modal.js"></script>
+  <script defer src="js/components/bag.js"></script>
+  <script defer src="js/components/book-card.js"></script>
+  <script defer src="js/main.js"></script> 
+  <script defer src="js/pages/home.js"></script>
+
+</body>
+</html>
+
+

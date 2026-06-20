@@ -1,0 +1,61 @@
+.book-grid { display: grid; gap: 20px; }
+.book-grid-five { grid-template-columns: repeat(5, 1fr); }
+.book-grid-four { grid-template-columns: repeat(4, 1fr); }
+.catalog-grid { grid-template-columns: repeat(5, 1fr); row-gap: 22px; }
+.related-grid { grid-template-columns: repeat(2, 128px); align-items: start; }
+.book-card {
+  border: 1px solid var(--line);
+  background: var(--cream-2);
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 0;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.book-card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(43,34,22,.10); }
+.book-cover {
+  position: relative;
+  aspect-ratio: 3 / 4.35;
+  border-radius: 2px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  color: white;
+  overflow: hidden;
+  box-shadow: inset -18px 0 24px rgba(255,255,255,.12), inset 18px 0 24px rgba(0,0,0,.08);
+}
+.book-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.25), transparent 58%);
+}
+.cover-text { position: relative; z-index: 1; }
+.cover-title { display: block; font-weight: 900; line-height: 1.05; font-size: 16px; letter-spacing: -0.035em; }
+.cover-author { display: block; margin-top: 5px; font-size: 10px; font-style: italic; font-weight: 700; }
+.badge {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  left: 10px;
+  border-radius: 2px;
+  padding: 3px 7px;
+  background: var(--gold);
+  color: #21190f;
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  font-weight: 900;
+}
+.badge.new { left: auto; right: 10px; background: var(--cream-2); color: var(--brand); }
+.card-title {
+  display: block;
+  margin-top: 10px;
+  font-weight: 900;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-author { margin: 2px 0 8px; font-size: 12px; font-style: italic; color: var(--muted); }
+.card-meta { display: flex; justify-content: space-between; align-items: center; gap: 8px; }

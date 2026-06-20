@@ -1,0 +1,41 @@
+.list-page { padding: 36px 0 90px; }
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+.breadcrumb a:hover { color: var(--brand); }
+.page-title-row h1 { margin-bottom: 4px; font-size: clamp(44px, 6vw, 58px); }
+.page-title-row p { margin-bottom: 26px; font-style: italic; color: var(--muted); }
+.catalog-toolbar {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+  margin-bottom: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+.filter-pills { display: flex; flex-wrap: wrap; gap: 9px; }
+.filter-pill {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: #5d5349;
+  border-radius: 999px;
+  padding: 7px 17px;
+  font-size: 13px;
+}
+.filter-pill.active { background: var(--brand); border-color: var(--brand); color: white; }
+.sort-control { display: flex; align-items: center; gap: 9px; font-size: 13px; color: var(--muted); }
+.sort-control select {
+  min-width: 130px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--cream-2);
+  padding: 8px 10px;
+  color: var(--ink);
+}
+.empty-state { padding: 30px; border: 1px dashed var(--line); border-radius: 8px; text-align: center; color: var(--muted); }

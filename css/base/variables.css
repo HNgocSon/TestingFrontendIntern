@@ -1,0 +1,16 @@
+:root {
+  --cream: #f3ead8;
+  --cream-2: #fbf6ea;
+  --ink: #241f1a;
+  --muted: #70685b;
+  --line: #ded1b8;
+  --brand: #9e3b2d;
+  --brand-dark: #7f2f24;
+  --gold: #d99e24;
+  --dark: #251f1b;
+  --white: #fffaf0;
+  --green: #2f5b46;
+  --radius: 8px;
+  --shadow: 0 20px 45px rgba(44, 36, 27, 0.16);
+  --font: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

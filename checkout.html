@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pages & Co. | Your bag</title>
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/layout.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/buttons.css" />
+  <link rel="stylesheet" href="css/components/header.css" />
+  <link rel="stylesheet" href="css/components/footer.css" />
+  <link rel="stylesheet" href="css/components/book-card.css" />
+  <link rel="stylesheet" href="css/components/modal.css" />
+  <link rel="stylesheet" href="css/pages/checkout.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body data-page="checkout">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main" class="wide-container checkout-page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="index.html">Home</a><span>/</span><span>Bag</span>
+    </nav>
+
+    <h1>Your bag</h1>
+    <section class="checkout-layout" aria-label="Checkout">
+      <div class="bag-list" id="bag-list"></div>
+      <aside class="summary-card" aria-label="Order summary">
+        <h2>Order summary</h2>
+        <div class="summary-line"><span>Subtotal (<span id="summary-count">0</span> items)</span><strong id="summary-subtotal">$0.00</strong></div>
+        <div class="summary-line"><span>Shipping</span><strong>Free</strong></div>
+        <div class="summary-total"><span>Total</span><strong id="summary-total">$0.00</strong></div>
+        <button class="btn btn-primary btn-full" type="button" data-checkout-button>Checkout</button>
+        <p>You’ll be asked to sign in to complete your order.</p>
+      </aside>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <div id="login-modal-root"></div>
+  <script defer src="js/data/books.js"></script>
+  <script defer src="js/utils/dom.js"></script>
+  <script defer src="js/components/toast.js"></script>
+  <script defer src="js/components/header.js"></script>
+  <script defer src="js/components/footer.js"></script>
+  <script defer src="js/components/login-modal.js"></script>
+  <script defer src="js/components/bag.js"></script>
+  <script defer src="js/components/book-card.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/pages/checkout.js"></script>
+</body>
+</html>
